@@ -1,0 +1,21 @@
+/*
+* Name: All.css
+* Description: Just a misc css file for everyone
+*/
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+header {
+    margin-top: -50px;
+}
+
+#btn_submit i.fa {
+    display:none;
+    margin-left:5px;
+}
+
+#btn_submit:disabled i.fa {
+    display:inline-block;
+}
