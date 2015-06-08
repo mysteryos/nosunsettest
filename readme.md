@@ -14,10 +14,26 @@ Laravel is accessible, yet powerful, providing powerful tools needed for large, 
 
 Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
-## Contributing
+## NoSunset Information
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+WebSite has been built on laravel's PHP framework. Css Framework is Bootstrap 3. Javascript Library is Jquery 1.11.x.
 
-### License
+`public` folder contains css/js. Specific files are `css/all.css`, `js/car.js`
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Following the MVC structure,
+
+Controllers are found at `App/http/controllers`, more specifically the `CarController.php` (RESTful controller).
+
+Models are found at `App/Models`:
+
+Model for interacting with *cars* table is at `App/Models/Db/Car.php`, using Laravel's own ORM (Eloquent).
+Model for interacting with the DMR web service ist at `App/Models/Webservice/DmrServiceclient`. (Note that an auto-generated soap client is found at `App/Models/SoapClient`)
+
+Views are found at `Resources/Views`.
+`Resources/Views/car.blade.php` displays the homepage where the user can search by the vehicle's registration number.
+
+Syntax of view is of *Blade* format (Laravel's own view syntax)
+
+An online playground will be setup online very soon, on AWS itself.
+
+
