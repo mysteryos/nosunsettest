@@ -37,8 +37,7 @@ $('#car_form').on('submit',function(event){
         },
         error:function(xhr)
         {
-            var errorJson = $.parseJSON(xhr.responseText);
-            alert(errorJson.msg);
+            alert(xhr.responseText);
             $btn_submit.removeAttr('disabled');
         }
     })

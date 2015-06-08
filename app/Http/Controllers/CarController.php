@@ -57,15 +57,15 @@ class CarController extends Controller {
             else
             {
                 //404 not found
-                return \Response::json(['msg'=>'Unable to find a match to the registration number'],404);
+                return \Response::make("Unable to find a match to the registration number",404);
             }
         }
         else
         {
-            return \Response::json(['msg'=>"Please enter the registration number"],400);
+            return \Response::make("Please enter the registration number",400);
         }
 
-        return \Response::json(['msg'=>"Unable to process your request at this time. Please try again."],500);
+        return \Response::make("Unable to process your request at this time. Please try again.",500);
     }
 }
 
